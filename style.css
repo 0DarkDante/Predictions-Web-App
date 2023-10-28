@@ -1,0 +1,57 @@
+body {
+  background-image: url('/IMG/filipp-romanovski-J1GQHBkH3yk-unsplash.jpg'); /* Путь к вашей фоновой картинке */
+  background-size: cover; /* Растягивает изображение, чтобы оно покрыло всю видимую область */
+  background-position: center; /* Центрирует изображение по горизонтали и вертикали */
+  background-attachment: fixed; /* Фиксирует фон, чтобы он не прокручивался вместе с содержимым страницы */
+  background-repeat: no-repeat; /* Запрещает повторять изображение */
+}
+
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff9900;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #333;
+  transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+/* Стили для абзацев внутри #predictions */
+#predictions p {
+  font-weight: bold;
+}
+
+p:hover {
+  color: #1e00ff; /* Изменение цвета при наведении на абзац */
+  transform: scale(1.05); /* Увеличение масштаба при наведении */
+}
